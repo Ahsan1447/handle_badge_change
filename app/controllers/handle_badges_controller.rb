@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class HandleBadge::AnswerController < ::ApplicationController
+class HandleBadge::HandleBadgesController < ::ApplicationController
   requires_plugin HandleBadge::PLUGIN_NAME
 
   def change
