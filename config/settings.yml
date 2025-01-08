@@ -1,0 +1,4 @@
+plugins:
+  enable_handle_badge_change:
+    default: true
+    client: true
