@@ -21,6 +21,8 @@ class HandleBadge::HandleBadgesController < ::ApplicationController
     pro_level_group_ids = Group.where(name: pro_level_mapping.keys).pluck(:id)
     user.group_users.where(group_id: pro_level_group_ids).destroy_all
     user.group_users.create(group_id: current_group.id, notification_level: 3)
+
+    head :ok
   end
 
 end
